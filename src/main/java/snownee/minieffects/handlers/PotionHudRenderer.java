@@ -228,12 +228,12 @@ public class PotionHudRenderer {
         int alphaByte = Math.round(finalAlpha * 255) & 0xFF;
 
         ResourceLocation bg;
-        ResourceLocation bgOverlay = null; // 默认设置为null，除非后面有条件赋值
+        ResourceLocation bgOverlay = null;
         ResourceLocation tm;
 
         if (isDimensionCurse) {
             bg = HUD_NEGATIVE_DIMENSIONCURSE_BG;
-            // 移除 bgOverlay 的赋值，深渊诅咒将不会有覆盖层
+
             tm = HUD_NEGATIVE_DIMENSIONCURSE_TIMER;
         } else {
             bg = good
@@ -289,7 +289,7 @@ public class PotionHudRenderer {
             }
         }
 
-        // 只有当 bgOverlay 不为 null 时才渲染它
+
         if (bgOverlay != null) {
             mc.getTextureManager().bindTexture(bgOverlay);
             GlStateManager.color(1, 1, 1, finalAlpha);
