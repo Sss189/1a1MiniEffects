@@ -1,0 +1,16 @@
+package snownee.minieffects.mixin.minecraft;
+
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.gen.Accessor;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.network.datasync.DataParameter;
+
+@Mixin(EntityLivingBase.class)
+public interface AccessLivingEntity {
+
+	@Accessor("POTION_EFFECTS")
+	static DataParameter<Integer> getParameter() {
+		throw new UnsupportedOperationException("wat?");
+	}
+}

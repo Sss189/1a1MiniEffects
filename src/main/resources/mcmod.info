@@ -1,0 +1,11 @@
+[{
+	"modid": "minieffects",
+	"name": "1a1 MiniEffects",
+	"version": "1.0",
+	"mcversion": "1.12.2",
+  "authorList": ["Snownee,ZZZank,Cool_Bread,Sss189"],
+	"dependencies": ["required:forge@[14.23.5.2860,)",
+      "mixinbooter",
+      "optional:curseofabyss"],
+  "description": "Potion HUD Expansion"
+}]
